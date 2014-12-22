@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+    --clean \
+    --ignore-system-defaults \
+    --mode debian \
+    --debian-installer live \
+    --source false \
+    --binary-images hdd \
+    --debian-installer-gui false \
+    --bootappend-install "video=off console=ttyS0,115200" \
+    --bootappend-live "video=off console=ttyS0,115200" \
+    --parent-mirror-bootstrap http://http.debian.net/debian \
+    --mirror-bootstrap http://http.debian.net/debian \
+    --mirror-binary http://http.debian.net/debian \
+"${@}"

@@ -1,0 +1,14 @@
+apt-get update
+apt-get -y install live-build
+
+
+http://live-systems.org/manual/stable/html/live-manual/managing-a-configuration.en.html
+
+lb config
+lb build
+
+dd if=binary.img of=/dev/sdc bs=16M
+
+
+PROBLEM:
+Initramfs cannot find the device with root filesystem and stops.

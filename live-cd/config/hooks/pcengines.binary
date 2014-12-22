@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sed -i -e 's|timeout 0|timeout 20|' binary/syslinux/syslinux.cfg
+
+echo "serial 0 115200" >>binary/syslinux/syslinux.cfg
