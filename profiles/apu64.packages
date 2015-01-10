@@ -6,3 +6,4 @@ firmware-ralink
 iw
 hdparm
 smartmontools
+lm-sensors
