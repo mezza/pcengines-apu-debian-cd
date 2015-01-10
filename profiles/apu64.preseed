@@ -73,6 +73,10 @@ d-i debian-installer/country string GB
 d-i clock-setup/utc boolean true
 d-i time/zone string Europe/London
 
+### NTP settings
+d-i clock-setup/ntp boolean true
+d-i clock-setup/ntp-server string 0.uk.pool.ntp.org
+
 passwd   passwd/root-password    password pcengines
 passwd   passwd/root-password-again  password pcengines
 
